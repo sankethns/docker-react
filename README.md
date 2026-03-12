@@ -1,3 +1,28 @@
+# docker-react
+
+A simple React application containerized with Docker, demonstrating both development and production workflows.
+
+## Project Overview
+
+This project is a [Create React App](https://github.com/facebook/create-react-app) based single-page application that is fully containerized using Docker. It serves as an example of:
+
+- **Development workflow**: Using `docker-compose` with volume mounts for hot-reloading during development.
+- **Production build**: A multi-stage Docker build that compiles the React app and serves it via Nginx.
+- **CI/CD pipeline**: Automated testing and deployment to AWS Elastic Beanstalk via Travis CI.
+
+The app itself renders a simple page with the message "HELLO SANKETH".
+
+## Tech Stack
+
+| Component | Technology |
+|-----------|------------|
+| Frontend Framework | React 16 (Create React App) |
+| Containerization | Docker + Docker Compose |
+| Production Server | Nginx |
+| CI/CD | Travis CI → AWS Elastic Beanstalk |
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
